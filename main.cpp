@@ -4,9 +4,9 @@
 #include"utils.h"
 int main()
 {
-	int * tab = gener();
+	int *tab = gener();
 	utils();
-	int a = min(*tab);
+	int a = min(tab);
 	std::cout << "minimum to " << a << std::endl;
 
 	return 0;
