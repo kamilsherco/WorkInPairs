@@ -1,11 +1,11 @@
 #include<iostream>
 #include"gen.h"
 #include"min.h"
-#include"utilis.h"
+#include"utils.h"
 int main()
 {
-	int * tab = gen();
-	utilis();
+	int * tab = gener();
+	utils();
 	int a = min(*tab);
 	std::cout << "minimum to " << a << std::endl;
 
