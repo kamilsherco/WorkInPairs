@@ -30,17 +30,23 @@ tab[i]=i;
 }
 return tab;
 }
-int utils()
+void utils(int *tab)
 {
-int sum=0;
-int *temp=gener();
+
 for(int i=0;i<10;++i)
 {
-sum=temp[i]+sum;
-std::cout<< temp[i]<< std::endl;
+
+std::cout<< tab[i]<< std::endl;
+}
 }
 
+int sum(int *tab)
+{
+int sum=0;
+for(int i=0;i<10;++i)
+{
+sum=tab[i]+sum;
+}
 return sum;
-
 }
 
