@@ -1,12 +1,13 @@
 #include<iostream>
 #include"gen.h"
+#include"min.h"
+#include"utilis.h"
 int main()
 {
-	std::cout << "10 liczb:" << std::endl;
-	int * tmp = gen();
-	for(int i=0; i<10; i++)
-	{
-		std::cout<<tmp[i] << std::endl;
-	}
+	int * tab = gen();
+	utilis();
+	int a = min(*tab);
+	std::cout << "minimum to " << a << std::endl;
+
 	return 0;
 }
